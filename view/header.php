@@ -16,7 +16,7 @@
                     <li><a href="#">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li style="display:<?php $_SESSION['user']?print('inline'):print('none')?>"><a href="http://localhost/blogs/controller/userController.php?viewprofile=true&userId=<?php echo $_SESSION['id'];?>"><span class="glyphicon glyphicon-user"></span> <?php echo "Welcome ".ucwords($_SESSION['name'])?></a></li>
+                    <li title="View Profile" style="display:<?php $_SESSION['user']?print('inline'):print('none')?>"><a href="http://localhost/blogs/controller/userController.php?viewprofile=true&userId=<?php echo $_SESSION['id'];?>"><span class="glyphicon glyphicon-user"></span> <?php echo "Welcome ".ucwords($_SESSION['name'])?></a></li>
                     <?php
                        if($fileName == 'userlist.php'){
 

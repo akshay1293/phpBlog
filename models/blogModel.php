@@ -10,7 +10,7 @@ function postBlogs($title, $content, $image){
 	$safeContent = mysqli_real_escape_string($connect, $content);
 	$safeImage = mysqli_real_escape_string($connect, $image);
 	$id = $_SESSION['id'];
-    $query = "INSERT INTO blogs (user_id,title,content,image,date_posted) VALUES ('$id','$title' , '$safeContent','$safeImage', '$date_posted')";
+    $query = "INSERT INTO blogs (user_id,title,content,image,date_posted) VALUES ('$id','$title' ,'$safeContent','$safeImage', '$date_posted')";
     $result = mysqli_query($connect,$query);
 
     if($result){
@@ -99,7 +99,7 @@ function getBlogs($limit = 2000000,$offset = 0){
     		         <td style='display:{$displayActionButton}'>
 
     		          <a id='change-status' href='http://localhost/blogs/controller/blogController.php?blogId={$rows['id']}&togglestatus=true' style='width:80px;font-family:monospace' class='btn btn-danger'>{$action}</a>
-                      <a href='http://localhost/blogs/controller/blogController.php?delete=true&blogId={$rows['id']}' id='remove-blog' style='text-decoration:none;margin-left:15px;display:{$displayRemove}'><span class='glyphicon glyphicon-trash' style='font-size:18px;top:6px'></span></a>
+                      <a title='Delete Blog' href='http://localhost/blogs/controller/blogController.php?delete=true&blogId={$rows['id']}' id='remove-blog' style='text-decoration:none;margin-left:15px;display:{$displayRemove}'><span class='glyphicon glyphicon-trash' style='font-size:18px;top:6px'></span></a>
     		         </td>
 
     		    </tr>";

@@ -6,6 +6,7 @@
 
     header("location:http://localhost/blogs/index.php");
   }
+
 ?>
   <head>
   <?php
