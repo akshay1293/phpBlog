@@ -20,13 +20,13 @@
                     <?php
                        if($fileName == 'userlist.php'){
 
-                            $linkToDisplay = '<li><a href="http://localhost/blogs/view/signUp.php"><span class="glyphicon glyphicon-pencil"></span> Create User</a></li>';
+                            print '<li><a href="http://localhost/blogs/view/signUp.php"><span class="glyphicon glyphicon-pencil"></span> Create User</a></li>';
                        }else if($fileName == 'allblogs.php' || $fileName == 'blogView.php' || $fileName == 'dashboard.php' || $fileName == 'home.php'){
 
 
-                            $linkToDisplay = '<li><a href="http://localhost/blogs/controller/blogController.php?create=true"><span class="glyphicon glyphicon-pencil"></span> Create Blog</a></li>';
+                            print '<li><a href="http://localhost/blogs/controller/blogController.php?create=true"><span class="glyphicon glyphicon-pencil"></span> Create Blog</a></li>';
                        }
-                       echo $linkToDisplay;
+                       //echo $linkToDisplay;
                     
                     ?>
                     
