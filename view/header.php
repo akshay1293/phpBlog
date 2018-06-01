@@ -5,7 +5,7 @@
    $fileName = $filePath[sizeof($filePath)-1];
 ?>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="background:#f7f7f7">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="http://localhost/blogs/index.php"><strong>Blogs</strong></a>
