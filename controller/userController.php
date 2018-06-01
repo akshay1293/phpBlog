@@ -70,7 +70,7 @@ if(isset($_POST['login'])){
                 header("location:http://localhost/blogs/view/login.php?error={$error}");           
             }else if($isLoggedIn ==  false){
 
-                $error = "please enter corrExplore more about overriding template.ect username and password";
+                $error = "please enter correct username and password";
                 header("location:http://localhost/blogs/view/login.php?error={$error}");
             }
     }
